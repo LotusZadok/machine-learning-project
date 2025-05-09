@@ -1,6 +1,5 @@
 import pandas as pd
 
-# data loading
 df = pd.read_csv('./data/raw/telco_customer_churn.csv')
 
 # null values verification
