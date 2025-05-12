@@ -175,3 +175,6 @@ cython_debug/
 
 # PROJECT SPECIFIC
 models/
+
+!models/README.md
+!models/.gitkeep
