@@ -17,7 +17,7 @@ from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier
 
-df = pd.read_csv("./data/processed/telco_customer_churn_encoded.csv")
+df = pd.read_csv("../../../data/processed/telco_customer_churn_encoded.csv")
 
 REFINED_FEATURES = [
     'PaymentMethod_Credit card (automatic)', 'SeniorCitizen',
@@ -122,5 +122,5 @@ plt.xlabel("Predicted"); plt.ylabel("Actual")
 plt.tight_layout(); plt.show()
 
 
-joblib.dump(best_model, "./models/xgboost_iteration_3_optuna.pkl")
-print("\nModel saved to ../../models/xgboost_iteration_3_optuna.pkl")
+joblib.dump(best_model, "../../../models/xgboost_iteration_3_optuna.pkl")
+print("\nModel saved to ../../../models/xgboost_iteration_3_optuna.pkl")

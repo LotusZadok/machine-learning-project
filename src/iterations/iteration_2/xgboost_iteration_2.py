@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix, roc_auc_sco
 from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier
 
-df = pd.read_csv('./data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../../data/processed/telco_customer_churn_encoded.csv')
 
 features = [
     'PaymentMethod_Credit card (automatic)', 'SeniorCitizen', 'Contract_One year',
@@ -90,4 +90,4 @@ plt.show()
 PrecisionRecallDisplay.from_predictions(y_test, y_prob)
 plt.show()
 
-joblib.dump(best_model, './models/xgboost_iteration_2_refined.pkl')
+joblib.dump(best_model, '../../../models/xgboost_iteration_2_refined.pkl')

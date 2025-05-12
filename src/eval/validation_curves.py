@@ -8,7 +8,7 @@ from sklearn.svm import SVC
 from xgboost import XGBClassifier
 
 # Load the processed data
-df = pd.read_csv('./data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../data/processed/telco_customer_churn_final.csv')
 X = df.drop(columns=['Churn_Yes'])
 y = df['Churn_Yes']
 

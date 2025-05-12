@@ -9,7 +9,7 @@ from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import StandardScaler
 
 # Load the processed data
-df = pd.read_csv('./data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../../data/processed/telco_customer_churn_encoded.csv')
 
 # Refined features after correlation analysis
 refined_features = [
@@ -72,4 +72,4 @@ plt.ylabel("Actual")
 plt.show()
 
 # Save the best model
-joblib.dump(best_model, './models/random_forest_iteration_2_refined.pkl')
+joblib.dump(best_model, '../../../models/random_forest_iteration_2_refined.pkl')

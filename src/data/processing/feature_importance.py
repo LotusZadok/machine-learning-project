@@ -7,14 +7,14 @@ from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 
 # Load the processed data
-df = pd.read_csv('./data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../../data/processed/telco_customer_churn_final.csv')
 X = df.drop(columns=['Churn_Yes'])
 y = df['Churn_Yes']
 
 # Load the trained models
 models = {
-    "Random Forest": joblib.load('./models/random_forest_tuned.pkl'),
-    "XGBoost": joblib.load('./models/xgboost_tuned.pkl')
+    "Random Forest": joblib.load('../../../models/random_forest_tuned.pkl'),
+    "XGBoost": joblib.load('../../../models/xgboost_tuned.pkl')
 }
 
 plt.figure(figsize=(20, 14))

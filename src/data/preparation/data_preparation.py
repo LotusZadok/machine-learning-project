@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import SMOTE
 
-df = pd.read_csv('./data/raw/telco_customer_churn.csv')
+df = pd.read_csv('../../data/raw/telco_customer_churn.csv')
 
 # totalcharges to numeric conversion
 
@@ -50,7 +50,7 @@ x_resampled, y_resampled = smote.fit_resample(x, y)
 df_resampled = pd.concat([pd.DataFrame(x_resampled, columns=x.columns), pd.DataFrame(y_resampled, columns=['Churn_Yes'])], axis=1)
 print(df_resampled['Churn_Yes'].value_counts())
 
-df_resampled.to_csv('./data/processed/telco_customer_churn_encoded.csv', index=False)
+df_resampled.to_csv('../../data/processed/telco_customer_churn_encoded.csv', index=False)
 
 
 

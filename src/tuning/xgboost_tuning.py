@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 import joblib
 
 # Load the data
-df = pd.read_csv('../../data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../data/processed/telco_customer_churn_final.csv')
 X = df.drop(columns=['Churn_Yes'])
 y = df['Churn_Yes']
 

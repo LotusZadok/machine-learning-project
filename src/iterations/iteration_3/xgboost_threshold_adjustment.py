@@ -13,7 +13,7 @@ from imblearn.over_sampling import SMOTE
 
 
 # load data and preprocess
-df = pd.read_csv("./data/processed/telco_customer_churn_encoded.csv")
+df = pd.read_csv("../../../data/processed/telco_customer_churn_encoded.csv")
 
 REFINED_FEATURES = [
     'PaymentMethod_Credit card (automatic)', 'SeniorCitizen',
@@ -87,6 +87,6 @@ plt.xlabel("Predicted"); plt.ylabel("Actual")
 plt.tight_layout(); plt.show()
 
 # Save the final model with the best threshold
-final_model_path = f"./models/xgboost_iteration_3_optuna_threshold_{best_threshold:.2f}.pkl"
+final_model_path = f"../../../models/xgboost_iteration_3_optuna_threshold_{best_threshold:.2f}.pkl"
 joblib.dump(model, final_model_path)
 print(f"\nFinal model saved to {final_model_path}")

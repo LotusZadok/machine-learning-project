@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('./data/processed/telco_customer_churn_encoded.csv')
+df = pd.read_csv('../../../data/processed/telco_customer_churn_encoded.csv')
 
 refined_features = [
     'PaymentMethod_Credit card (automatic)', 'SeniorCitizen', 
@@ -68,4 +68,4 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.show()
 
-joblib.dump(best_model, './models/svm_iteration_2_refined.pkl')
+joblib.dump(best_model, '../../../models/svm_iteration_2_refined.pkl')

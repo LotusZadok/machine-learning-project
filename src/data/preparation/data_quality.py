@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('./data/raw/telco_customer_churn.csv')
+df = pd.read_csv('../../data/raw/telco_customer_churn.csv')
 
 # null values verification
 missing_values = df.isnull().sum()
