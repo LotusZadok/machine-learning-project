@@ -1,5 +1,7 @@
 # Machine Learning Project - Artificial Intelligence Course
 
+## Sebastián Granados Artavia & Emanuel Rodríguez Oviedo
+
 Welcome to the **Machine Learning Project** repository for the **Artificial Intelligence** course. This project focuses on customer churn prediction using a structured machine learning pipeline, including data preprocessing, feature selection, model training, and hyperparameter tuning.
 
 ---
