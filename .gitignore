@@ -174,7 +174,7 @@ cython_debug/
 .pypirc
 
 # PROJECT SPECIFIC
-models/
+models/*
 
 !models/README.md
 !models/.gitkeep
